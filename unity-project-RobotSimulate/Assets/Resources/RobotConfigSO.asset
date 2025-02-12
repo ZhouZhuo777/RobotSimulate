@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7413cbebcccd4cfc9e26b940876711e, type: 3}
+  m_Name: RobotConfigSO
+  m_EditorClassIdentifier: 
+  RobotConfig:
+    RobotArr:
+    - robotLevel: 0
+      startScoreRange: 15
+      scoringProbabilityArr:
+      - left: 1
+        probability: 0.1
+      - left: 4
+        probability: 0
+      - left: 11
+        probability: 0
+      onceGetScoreRange: 1
+      dailyMaxScoreInterval:
+        left: 4
+        right: 6
+      dailyAutoGetScoreNum: 5
+    - robotLevel: 1
+      startScoreRange: 15
+      scoringProbabilityArr:
+      - left: 1
+        probability: 0.2
+      - left: 4
+        probability: 0.1
+      - left: 11
+        probability: 0
+      onceGetScoreRange: 2
+      dailyMaxScoreInterval:
+        left: 5
+        right: 15
+      dailyAutoGetScoreNum: 8
+    - robotLevel: 2
+      startScoreRange: 10
+      scoringProbabilityArr:
+      - left: 1
+        probability: 0.4
+      - left: 4
+        probability: 0.2
+      - left: 11
+        probability: 0.1
+      onceGetScoreRange: 3
+      dailyMaxScoreInterval:
+        left: 10
+        right: 20
+      dailyAutoGetScoreNum: 10
+    - robotLevel: 3
+      startScoreRange: 5
+      scoringProbabilityArr:
+      - left: 1
+        probability: 0.6
+      - left: 4
+        probability: 0.4
+      - left: 11
+        probability: 0.2
+      onceGetScoreRange: 5
+      dailyMaxScoreInterval:
+        left: 30
+        right: 50
+      dailyAutoGetScoreNum: 15
+  RobotGearConfig:
+    gearScoreArr:
+    - left: 1
+      probability: 0.5
+    - left: 2
+      probability: 0
+    - left: 3
+      probability: 0
+    - left: 4
+      probability: -1
+    - left: 11
+      probability: -1
+    robotGearDicArr:
+    - level: -2
+      gearArr: 220000000f0000000000000000000000
+    - level: -1
+      gearArr: 210000000f0000000100000000000000
+    - level: -2
+      gearArr: 200000000f0000000200000000000000
+    - level: 1
+      gearArr: 1f0000000f0000000200000001000000
+    - level: 2
+      gearArr: 1f0000000f0000000100000002000000
