@@ -11,12 +11,8 @@
 /[Mm]emoryCaptures/
 Library/
 /Library/
-/[Tt]emp/
-/[Ll]ogs/
-/[Ll]ibrary/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
+Temp/
+Logs/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -50,13 +46,8 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
-.vs/
 .vscode/
 .idea/
-*.csproj
-*.sln
-*.user
-*.userprefs
 
 # Unity3D generated meta files
 *.pidb.meta
